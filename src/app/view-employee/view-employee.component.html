@@ -1,123 +1,30 @@
 <app-navbar></app-navbar>
+
+
 <div class="container">
     <div class="row mt-4">
         <table class="table">
             <thead>
               <tr>
-                <th scope="col">Code</th>
+                
                 <th scope="col">Name</th>
                 <th scope="col">Designation</th>
                 <th scope="col">Salary</th>
-                <th scope="col">Phone no</th>
-                <th scope="col">Email id</th>
-                <th scope="col">Company website</th>
-                <th scope="col">Year of experience</th>
+                
                 
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr *ngFor="let i of data">
                 
-                <td>3212</td>
-                <td>Andrew</td>
-                <td>SE</td>
-                <td>25000</td>
-                <td>9865743521</td>
-                <td>andrew@hmail.com</td>
-                <td>abc.com</td>
-                <td>5</td>
+               
+                <td>{{i.name}}</td>
+                <td>{{i.Designation}}</td>
+                <td>{{i.Salary}}</td>
+                
                
               </tr>
-              <tr>
-                <td>3243</td>
-                <td>John</td>
-                <td>SD</td>
-                <td>30000</td>
-                <td>9865748745</td>
-                <td>john@hmail.com</td>
-                <td>abc.com</td>
-                <td>8</td>
-              </tr>
-              <tr>
-                <td>3267</td>
-                <td>Rahul</td>
-                <td>SE</td>
-                <td>25000</td>
-                <td>9780643521</td>
-                <td>rahul@hmail.com</td>
-                <td>xyz.com</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>3235</td>
-                <td>Mathew</td>
-                <td>MD</td>
-                <td>60000</td>
-                <td>9867945521</td>
-                <td>mathew@hmail.com</td>
-                <td>def.com</td>
-                <td>8</td>
-              </tr>
-              <tr>
-                <td>3255</td>
-                <td>Manu</td>
-                <td>HR</td>
-                <td>50000</td>
-                <td>9876743521</td>
-                <td>manu@hmail.com</td>
-                <td>xyz.com</td>
-                <td>6</td>
-              </tr>
-              <tr>
-                <td>3256</td>
-                <td>Varun</td>
-                <td>SE</td>
-                <td>25000</td>
-                <td>9865789761</td>
-                <td>varun@hmail.com</td>
-                <td>abc.com</td>
-                <td>6</td>
-              </tr>
-              <tr>
-                <td>3213</td>
-                <td>Ravi</td>
-                <td>SD</td>
-                <td>35000</td>
-                <td>9865543821</td>
-                <td>ravi@hmail.com</td>
-                <td>def.com</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>3278</td>
-                <td>Jake</td>
-                <td>SD</td>
-                <td>35000</td>
-                <td>8095743521</td>
-                <td>jake@hmail.com</td>
-                <td>xyz.com</td>
-                <td>7</td>
-              </tr>
-              <tr>
-                <td>3233</td>
-                <td>Luke</td>
-                <td>SE</td>
-                <td>25000</td>
-                <td>7065743521</td>
-                <td>luke@hmail.com</td>
-                <td>abc.com</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>3287</td>
-                <td>Mahesh</td>
-                <td>Sd</td>
-                <td>35000</td>
-                <td>9865748971</td>
-                <td>mahesh@hmail.com</td>
-                <td>abc.com</td>
-                <td>6</td>
-              </tr>
+              
             </tbody>
           </table>
     </div>
