@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class SearchEmployeeComponent {
 
+  code=""
+
+  readValues=()=>
+  {
+    let data:any={"code":this.code}
+    console.log(data)
+  }
+
 }

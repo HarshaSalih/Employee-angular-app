@@ -3,12 +3,12 @@
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
-                <!-- <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">Employee code</label>
-                    <input type="text" class="form-control">
+                    <input name="code" [(ngModel)]="code" type="text" class="form-control">
 
-                </div> -->
+                </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">Employee name</label>
@@ -27,30 +27,30 @@
                     <input name="Salary" [(ngModel)]="Salary" type="text" class="form-control">
                     
                 </div>
-                <!-- <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">Phone no.</label>
-                    <input type="text" class="form-control">
+                    <input name="phone" [(ngModel)]="phone" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">Email id</label>
-                    <input type="text" class="form-control">
+                    <input name="email" [(ngModel)]="email" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">Company website</label>
-                    <input type="text" class="form-control">
+                    <input name="companyWebsite" [(ngModel)]="companyWebsite" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="form-label">Year of Experience</label>
-                    <input type="text" class="form-control">
+                    <input name="yearOfExperience" [(ngModel)]="yearOfExperience" type="text" class="form-control">
 
-                </div> -->
+                </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
 
                    <button (click)="readValues()" class="btn btn-success">Submit</button>
